@@ -11,6 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <AdBanner />
       <main className="flex-grow container mx-auto px-4 py-8">
         <section>
           <h2 className="text-3xl font-bold mb-6 text-center font-headline text-primary">Browse by Health Problem</h2>

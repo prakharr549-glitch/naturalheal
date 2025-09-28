@@ -23,6 +23,7 @@ export default function CategoryPage({ params }: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+      <AdBanner />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="mb-8">
           <Button asChild variant="ghost">
