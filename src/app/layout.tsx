@@ -4,7 +4,7 @@ import './globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Ayurveda Solutions',
+  title: 'Natural Heal for Remedies',
   description: 'Your guide to traditional Indian remedies.',
 };
 
