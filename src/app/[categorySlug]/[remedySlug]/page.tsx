@@ -6,7 +6,6 @@ import { Separator } from '@/components/ui/separator';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft } from 'lucide-react';
 import Header from '@/components/Header';
-import AdBanner from '@/components/AdBanner';
 import RemedyRecommender from '@/components/RemedyRecommender';
 
 type Props = {
@@ -28,7 +27,6 @@ export default function RemedyPage({ params }: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <AdBanner adSlot="6574275185" />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="max-w-3xl mx-auto">
           <div className="mb-8">
@@ -69,7 +67,6 @@ export default function RemedyPage({ params }: Props) {
           </Card>
         </div>
       </main>
-      <AdBanner adSlot="1536736779" />
     </div>
   );
 }

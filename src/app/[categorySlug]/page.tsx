@@ -5,7 +5,6 @@ import { getCategoryBySlug } from '@/lib/remedies';
 import { Button } from '@/components/ui/button';
 import { ChevronLeft, Leaf } from 'lucide-react';
 import Header from '@/components/Header';
-import AdBanner from '@/components/AdBanner';
 
 type Props = {
   params: {
@@ -23,7 +22,6 @@ export default function CategoryPage({ params }: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <AdBanner adSlot="6574275185" />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="mb-8">
           <Button asChild variant="ghost">
@@ -51,7 +49,6 @@ export default function CategoryPage({ params }: Props) {
           ))}
         </div>
       </main>
-      <AdBanner adSlot="1536736779" />
     </div>
   );
 }
