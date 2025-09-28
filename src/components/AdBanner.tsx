@@ -1,22 +1,33 @@
-import { Card } from "./ui/card";
+"use client";
+
+import { useEffect } from 'react';
+
+declare global {
+  interface Window {
+    adsbygoogle?: { [key: string]: unknown }[];
+  }
+}
 
 export default function AdBanner() {
-  // TODO: Replace this with your actual AdMob banner implementation.
-  // You will need to integrate the Google Mobile Ads SDK for this.
-  const isAdLoaded = true; // Simulate ad loaded state
+  useEffect(() => {
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (err) {
+      console.error(err);
+    }
+  }, []);
 
   return (
     <aside className="py-4">
       <div className="container mx-auto">
-        <Card className="h-20 flex items-center justify-center bg-card/50 border-dashed">
-          {isAdLoaded ? (
-            <div>
-              <p className="text-muted-foreground">Your ad here!</p>
-            </div>
-          ) : (
-            <p className="text-muted-foreground text-sm">AdMob Banner Placeholder</p>
-          )}
-        </Card>
+        <div className="h-20 flex items-center justify-center">
+            <ins className="adsbygoogle"
+                style={{ display: 'block' }}
+                data-ad-client="ca-pub-4790820209653050"
+                data-ad-slot="6574275185"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+        </div>
       </div>
     </aside>
   );
