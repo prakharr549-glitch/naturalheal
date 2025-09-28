@@ -27,7 +27,7 @@ export default function AdBanner({ adSlot }: AdBannerProps) {
         console.error('AdSense error:', err);
       }
     }
-  }, [isMounted]);
+  }, [isMounted, adSlot]);
 
   if (!isMounted) {
     return (
