@@ -8,7 +8,11 @@ declare global {
   }
 }
 
-export default function AdBanner() {
+type AdBannerProps = {
+  adSlot: string;
+};
+
+export default function AdBanner({ adSlot }: AdBannerProps) {
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
@@ -44,7 +48,7 @@ export default function AdBanner() {
             <ins className="adsbygoogle"
                 style={{ display: 'block' }}
                 data-ad-client="ca-pub-4790820209653050"
-                data-ad-slot="6574275185"
+                data-ad-slot={adSlot}
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
         </div>

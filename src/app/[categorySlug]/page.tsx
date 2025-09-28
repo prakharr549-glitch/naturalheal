@@ -23,7 +23,7 @@ export default function CategoryPage({ params }: Props) {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <AdBanner />
+      <AdBanner adSlot="6574275185" />
       <main className="flex-grow container mx-auto px-4 py-8">
         <div className="mb-8">
           <Button asChild variant="ghost">
@@ -51,7 +51,7 @@ export default function CategoryPage({ params }: Props) {
           ))}
         </div>
       </main>
-      <AdBanner />
+      <AdBanner adSlot="1536736779" />
     </div>
   );
 }
