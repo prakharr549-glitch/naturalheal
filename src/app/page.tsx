@@ -3,6 +3,7 @@ import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { getCategories } from '@/lib/remedies';
 import { categoryIcons } from '@/lib/icons';
 import Header from '@/components/Header';
+import AdBanner from '@/components/AdBanner';
 
 export default function Home() {
   const categories = getCategories();
@@ -11,6 +12,11 @@ export default function Home() {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
+        <AdBanner
+            data-ad-client="ca-pub-4790820209653050"
+            data-ad-slot="6574275185" // Example slot, replace if needed
+            className="my-4"
+        />
         <section>
           <h2 className="text-3xl font-bold mb-6 text-center font-headline text-primary">Browse by Health Problem</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -29,6 +35,11 @@ export default function Home() {
             })}
           </div>
         </section>
+        <AdBanner
+            data-ad-client="ca-pub-4790820209653050"
+            data-ad-slot="1536736779" // Example slot, replace if needed
+            className="my-4"
+        />
       </main>
     </div>
   );
