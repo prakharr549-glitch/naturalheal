@@ -13,8 +13,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow container mx-auto px-4 py-8">
         <AdBanner
+            key="top-ad-banner"
             data-ad-client="ca-pub-4790820209653050"
-            data-ad-slot="6574275185" // Example slot, replace if needed
+            data-ad-slot="6574275185"
             className="my-4"
         />
         <section>
@@ -36,8 +37,9 @@ export default function Home() {
           </div>
         </section>
         <AdBanner
+            key="bottom-ad-banner"
             data-ad-client="ca-pub-4790820209653050"
-            data-ad-slot="1536736779" // Example slot, replace if needed
+            data-ad-slot="1536736779"
             className="my-4"
         />
       </main>
