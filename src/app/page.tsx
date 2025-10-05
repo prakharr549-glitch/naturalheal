@@ -15,7 +15,7 @@ export default function Home() {
         <AdBanner
             key="top-ad-banner"
             data-ad-client="ca-pub-4790820209653050"
-            data-ad-slot="6574275185"
+            data-ad-slot="8439419998"
             className="my-4"
         />
         <section>
